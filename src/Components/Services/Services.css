@@ -1,0 +1,178 @@
+.Services{
+    width: 100%;
+    /* height: 100vh; */
+    color: #fff;
+    padding: 0 80px;
+    background: url(./images/67061df890aa3a22852e80f9_pricing\ ribbon\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+.Services-top{
+    width: 100%;
+    height: 24%;
+    /* background: #000; */
+    display: flex;
+    margin-bottom: 80px;
+}
+.Services-top-left{
+    width: 47%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    /* padding-left: 70px; */
+}
+.Services-top-left p{
+    font-weight: bolder;
+}
+.Services-top-left h1{
+    font-size: 40px;
+}
+.Services-top-left h1 span{
+    color: #8d8d8b;
+}
+.Services-top-right{
+    width: 53%;
+    height: 100%;
+}
+.Heading-services{
+    font-size: 160px;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+}
+
+.Services-mid{
+    display: flex;
+    align-items: center;
+    height: 66%;
+    width: 100%;
+    position: relative;
+    gap: 50px;
+}
+.Services-blur{
+    position: absolute;
+    z-index: -1;
+    background: linear-gradient(90deg, rgb(155, 0, 221) 0%, rgb(0, 106, 255) 100%);
+    filter: blur(220px);
+    left: 50%;
+    width: 400px;
+    height: 400px;
+}
+.Services-card{
+    height: 100%;
+    width: 25%;
+    backdrop-filter: blur(5px);
+    /* background: url(./images/Ellipse\ 1.png);
+    background-position:  center;
+    background-size: cover; */
+    border: 1px solid #545454;
+    padding: 40px 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+/* .Services-card:hover{
+    transition: 1s;
+} */
+
+.Service-icon{
+    /* background: #000; */
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+.Services-card h2{
+font-size: 25px;    
+margin-bottom: 10px;
+}
+.Services-card p{
+    font-size: 15px;
+    line-height: 25px;
+}
+.Service-center{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    /* background: #000; */
+}
+
+.Services-bottom{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.Service-end-line{
+    /* text-align: end; */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    /* justify-content: end; */
+    margin: 80px 0;
+    gap: 20px;
+}
+.Service-end-line span{
+    width: 60px;
+    height: 2px;
+    background: #fff;
+}
+
+
+@media (max-width: 1024px) {
+    .Services-top{
+        flex-direction: column;
+    }
+    .Services {
+        padding: 0 80px;
+    }
+
+    .Services-top-left h1 {
+        font-size: 50px;
+    }
+
+    .Heading-services {
+        font-size: 160px;
+    }
+    .Services-mid{
+        flex-wrap: wrap;
+    }
+
+    .Services-card {
+        width: 400px;
+        padding: 40px 20px;
+    }
+
+    .Service-end-line {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .Service-end-line span {
+        width: 60px;
+    }
+}
+@media (max-width: 768px) {
+    .Heading-services{
+        font-size: 6rem;
+    }
+    .Services-blur{
+        left: 0;
+    }
+}
+@media (max-width: 480px) {
+    .Services{
+        padding: 30px;
+    }
+    .Services-top-left h1{
+        font-size: 2rem;
+    }
+    .Heading-services{
+        font-size: 3rem;
+    }
+    .Services-blur{
+        width: 300px;
+    }
+}

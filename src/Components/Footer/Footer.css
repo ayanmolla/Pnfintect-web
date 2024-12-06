@@ -1,0 +1,147 @@
+
+.footer{
+    overflow: hidden;
+    position: relative;
+}
+
+.footer::before{
+    content: "";
+    position: absolute;
+    background: linear-gradient(90deg, rgb(255, 0, 234) 0%, rgb(0, 140, 255) 100%);
+    filter: blur(100px);
+    z-index: -1;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 0px;
+    transform: translate(100%,-10%);
+}
+
+.footer-container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 3rem 20px;
+    max-width: 1200px;
+}
+
+.footer-top-container{
+    display: flex;
+    padding-bottom: 3rem;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 0.5px solid #b3b3b3;
+}
+
+.footer-title-box{
+    color: #fff;
+}
+
+.footer-logo-box{
+    gap: 8px;
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.footer-logo-box img{
+    width: 45px;
+    border-radius: 50%;
+}
+
+.footer-title-box p{
+    width: 100%;
+    max-width: 550px;
+    color: #b3b3b3;
+}
+
+.footer-icon-box{
+    gap: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-icon-box a{
+    color: #fff;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    font-size: 18px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content:center;
+    transition: 0.3s linear;
+    background-color: #202020;
+}
+
+.footer-icon-box a:hover{
+    scale: 1.2;
+    color: #229ef7;
+}
+
+.footer-bottom-container{
+    display: flex;
+    color: #b3b3b3;
+    padding:50px 0 0 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-left-box p{
+    font-size: 14px;
+}
+
+.footer-bottom-container span{
+    color: #fff;
+    font-weight: bold;
+}
+
+.footer-right-box a{
+    margin: 0 8px;
+    color: #b3b3b3;
+    text-decoration: none;
+    transition: 0.3s linear;
+}
+
+.footer-right-box a:hover{
+    color: #229ef7;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .footer-top-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-title-box {
+        margin-bottom: 20px;
+    }
+
+    .footer-logo-box{
+        justify-content: center;
+    }
+
+    .footer-icon-box {
+        justify-content: center;
+    }
+
+    .footer-bottom-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .footer-right-box {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-right-box a {
+        margin: 5px;
+    }
+}
