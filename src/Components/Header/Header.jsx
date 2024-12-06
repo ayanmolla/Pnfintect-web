@@ -113,7 +113,7 @@ const Header = () => {
         <div className="header-container">
           <div className="header-logo-box">
             <img src={logoimg} alt="Logo" className="header-logo" />
-            <span className="header-logo-text">PN SOFTWARE TECH PVT. LVT</span>
+            <span className="header-logo-text">PN SOFTWARE TECH PVT.LTD</span>
           </div>
           
           {/* Desktop Navigation */}

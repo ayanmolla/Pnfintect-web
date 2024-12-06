@@ -11,7 +11,7 @@ const Footer = () => {
                 <div className="footer-title-box">
                     <div className="footer-logo-box">
                         <img src={logoimg} alt="" />
-                        <span>PN SOFTWARE TECH PVT. LVT</span>
+                        <span>PN SOFTWARE TECH PVT. LTD</span>
                     </div>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id sapiente
                     dolor autem mollitia odio modi, sunt provident assumenda voluptates
@@ -26,7 +26,7 @@ const Footer = () => {
             </div>
             <div className="footer-bottom-container">
                 <div className="footer-left-box">
-                    <p>&copy;2024 All Right Reserved by <span>PN SOFTWARE TECH PVT. LVT</span></p>
+                    <p>&copy;2024 All Right Reserved by <span>PN SOFTWARE TECH PVT. LTD</span></p>
                 </div>
                 <div className="footer-right-box">
                     <a href="#">Terms Of Service</a>

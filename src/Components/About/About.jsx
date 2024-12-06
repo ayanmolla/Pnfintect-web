@@ -14,7 +14,7 @@ function About() {
           <h1 className='Heading-about' >ABOUT</h1>
           <div className="about-contant">
           <p className='about-top-peragraph'>We are happy to introduce you to Roundpay</p>
-          <p className='about-mid-peragraph'>Roundpay is an IT and Recharge services provider company that deals with IT market Requirements and custom software.</p>
+          <p className='about-mid-peragraph'>Pn Software Pvt. Ltd is an IT and Recharge services provider company that deals with IT market Requirements and custom software.</p>
           <p className='about-end-peragraph'>We are the foremost Recharge API provider in India and issue Multi Recharge API to our great consumers. We have a team of specialists and crackerjack professionals. Our panel of experts is proficient to serve excellence to accomplish your business objectives.</p>        
           </div>
           <div className="about-buttons">
