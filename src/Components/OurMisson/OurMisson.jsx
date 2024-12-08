@@ -1,6 +1,12 @@
 import React from 'react'
 import './OurMisson.css'
 import { FaArrowRightLong } from "react-icons/fa6";
+import bgContent from './images/14 (1).png'
+// import bgContent from './images/6.png'
+// import bgContent from './images/5.png'
+// import bgContent from './images/Group 1 (3).png'
+// import bgContent from './images/Group 32.png'
+
 
 function OurMisson() {
   return (
@@ -19,6 +25,7 @@ function OurMisson() {
                     <span>
                         <FaArrowRightLong />
                     </span>
+                    <img className='bgContant-OurMisson' src={bgContent} alt="" />
                 </div>
                 <div className="OurMisson-hover-box">
                     <h2>02</h2>
@@ -28,6 +35,8 @@ function OurMisson() {
                     <span>
                         <FaArrowRightLong />
                     </span>
+                    <img className='bgContant-OurMisson' src={bgContent} alt="" />
+                    
                 </div>
                 <div className="OurMisson-hover-box">
                     <h2>03</h2>
@@ -37,6 +46,7 @@ function OurMisson() {
                     <span>
                         <FaArrowRightLong />
                     </span>
+                    <img className='bgContant-OurMisson' src={bgContent} alt="" />
                 </div>
                 <div className="OurMisson-hover-box">
                     <h2>04</h2>
@@ -46,6 +56,7 @@ function OurMisson() {
                     <span>
                         <FaArrowRightLong />
                     </span>
+                    <img className='bgContant-OurMisson' src={bgContent} alt="" />
                 </div>
             </div>
         </div>

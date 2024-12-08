@@ -8,6 +8,7 @@ import Talkwithus from '../../Components/Talk-with-us/Talk-withus';
 import Footer from '../../Components/Footer/Footer';
 import ExtraMiniCard from '../../Components/ExtraMiniCard/ExtraMiniCard';
 import Testimonials from '../../Components/Testimonials/Testimonials';
+import OurMisson from '../../OurMisson/OurMisson';
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <ExtraMiniCard/>
       <About/>
       <Services/>
+      <OurMisson/>
       <Testimonials/>
       <Talkwithus/>
       <Footer/>
