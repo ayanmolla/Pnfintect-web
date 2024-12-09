@@ -18,20 +18,11 @@ const FormPopup = ({ onClose }) => {
             <div className="Form-Popup-container">
                 <form>
                     <input type="text" placeholder="Name*" required />
-                    <div className="Form-Popup-inp-box">
-                        <input type="number" placeholder="Country Code" required />
-                        <input type="number" placeholder='Phone No*' required />
-                    </div>
-                    <div className="Form-Popup-inp-box">
-                        <input type="email" placeholder="Email*" required />
-                        <select>
-                            <option>Digital Marketing</option>
-                        </select>
-                    </div>
-                    <input type="text" placeholder="Which Business do you have ?*" required />
+                    <input type="number" placeholder='Phone No*' required />
+                    <input type="email" placeholder="Email*" required />
                     <input type="text" placeholder="Location*" required />
                     <textarea placeholder="Message*" required></textarea>
-                    <button><span>Connect With Daily Digital Today</span><FaArrowUp /></button>
+                    <button><span>Connect With PN Software Tech Pvt. Ltd</span><FaArrowUp /></button>
                 </form>
             </div>
         </div>

@@ -6,14 +6,24 @@
 .OurMisson-top{
     width: 100%;
     height: 10%;
-    padding: 0 80px;
+    /* padding: 0 80px; */
+    padding-left: 80px;
     margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.OurMisson-top p{
-    font-weight: bolder;
-    margin-bottom: 20px;
+.OurMisson-top-heading{
+    font-size: 40px;
 }
-
+.OurMisson-top h1 span{
+    color: #8d8d8b;
+}
+.Heading-OurMisson{
+    font-size: 130px;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+}
 .OurMisson-mid{
     width: 100%;
 }
@@ -67,7 +77,14 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-
+    transition: all ease .5s;
+}
+.OurMisson-hover-box span:hover{
+    border: 1px solid transparent ;
+    scale: 140%;
+}
+.OurMisson-hover-box span:active{
+    scale: 98%;
 }
 .OurMisson-hover-box::before{
     content: '';

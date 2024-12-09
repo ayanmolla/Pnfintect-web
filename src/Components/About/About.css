@@ -76,11 +76,26 @@ body{
     width: 215px;
     padding: 6px;
     margin-top: 40px;
-    background: #bbbbbb;
+    background: linear-gradient(180deg, #a4aed1 0%, #455693 78%);
     background-size: cover;
     background-position: center;
+    position: relative;
     border-radius: 100px;
+    overflow: hidden;
+    transition: all ease 1s;
 }
+.about-buttons:hover .about-buttons-2{
+    transform: scale(200%);
+    /* background: linear-gradient(180deg, #8094dd 0%, #132f94 78%); */
+}
+.about-buttons:hover .about-buttons-1{
+    transform: scale(150%);
+    background: #ffffff;
+    color: #000;
+}
+/* .about-buttons:hover{
+    background: linear-gradient(180deg, #a4aed1 0%, #455693 78%);
+} */
 .about-buttons button{
     cursor: pointer;
 }
@@ -92,16 +107,22 @@ body{
     font-size: 12px;
     font-weight: bolder;
     color: #fff;
+    z-index: 3;
+    transition: all ease .8s;
     background: linear-gradient(90deg, rgba(25,25,25,1) 0%, rgba(88,88,88,1) 50%, rgba(25,25,25,1) 100%);
 }
 .about-buttons-2{
     padding: 0 10px;
     border-radius: 100%;
+    z-index: 5;
     display: flex;
+    /* position: absolute; */
+    background: #ffffff;
     align-items: center;
     justify-content: center;
     border: none;
     font-size: 25px;
+    transition: all ease .8s;
 }
 
 .about-end-line{

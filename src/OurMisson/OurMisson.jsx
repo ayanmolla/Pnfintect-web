@@ -13,8 +13,8 @@ function OurMisson() {
     <main>
         <div className="OurMisson">
             <div className="OurMisson-top">
-                <p>OUR MISSION</p>
-                <h1>Complete assurance about quality & timely execution</h1>
+                <h1 className='OurMisson-top-heading'><span>Complete assurance about</span> <br /> quality & timely execution</h1>
+                <h1 className='Heading-OurMisson'>OUR MISSION</h1>
             </div>
             <div className="OurMisson-mid">
                 <div className="OurMisson-hover-box">
@@ -60,6 +60,7 @@ function OurMisson() {
                 </div>
             </div>
         </div>
+        <h3 className='about-end-line'>03 <span></span><span></span><span></span><span></span></h3>
     </main>
   )
 }

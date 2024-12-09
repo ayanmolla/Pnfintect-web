@@ -1,9 +1,25 @@
 import React from 'react'
 // import { FaBeer } from 'react-icons/fa';
 import './About.css'
-import { MdCall } from 'react-icons/md';
+import { IoIosArrowForward } from "react-icons/io";
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger)
 
 function About() {
+  useGSAP(
+    () => {
+        gsap.from('.about-blur-box', {
+          x:2000,
+          duration:2,
+          scrollTrigger:{
+            scroller:'body',
+            trigger:''
+          }
+        });
+    }
+);
   return (
     <main className='main-about'>
       <div className='about'>
@@ -18,7 +34,7 @@ function About() {
           <p className='about-end-peragraph'>We are the foremost Recharge API provider in India and issue Multi Recharge API to our great consumers. We have a team of specialists and crackerjack professionals. Our panel of experts is proficient to serve excellence to accomplish your business objectives.</p>        
           </div>
           <div className="about-buttons">
-              <button className='about-buttons-1'>READ MORE</button><button className='about-buttons-2'><MdCall /></button>
+              <button className='about-buttons-1'>READ MORE</button><button className='about-buttons-2'><IoIosArrowForward /></button>
           </div>
         </div>
       </div>

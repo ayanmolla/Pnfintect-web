@@ -76,8 +76,7 @@
 }
 
 .Form-Popup-container form input,
-.Form-Popup-container form textarea,
-.Form-Popup-container form select{
+.Form-Popup-container form textarea{
     width: 100%;
     border: none;
     outline: none;
@@ -118,12 +117,12 @@
     justify-content:center;
     transition: all 0.2s ease;
     color: var(--primary-white);
-    background: linear-gradient(135deg, var(--primary-blue), var(--primary-bright-purple));
+    background: linear-gradient(45deg, #127fec, #8000ff);
 }
 
 .Form-Popup-container button:hover {
-    background-color: #3d31e0;
-    box-shadow: 0px 0px 25px var(--prymari-blue);
+    background: linear-gradient(45deg, #1b8bfc, #7803d8);
+    box-shadow: 0 4px 10px rgba(0, 157, 255, 0.5);
     transform: translateY(-2px);
 }
 

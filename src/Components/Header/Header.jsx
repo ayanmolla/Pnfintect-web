@@ -2,8 +2,19 @@ import React, { useState } from 'react';
 import './Header.css';
 import logoimg from './Image/Logo img.jpg';
 import { IoChevronDown, IoMenuOutline, IoCloseOutline } from 'react-icons/io5';
+import FormPopup from '../Form-popup/FormPopup';
 
 const Header = () => {
+  const [showFormPopup, setShowFormPopup] = useState(false);
+
+  const handleOpenPopup = () => {
+    setShowFormPopup(true);
+  };
+
+  const handleClosePopup = () => {
+    setShowFormPopup(false);
+  };
+
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -122,7 +133,7 @@ const Header = () => {
               {renderDropdownMenu()}
             </div>
             <div className="header-btn-box">
-              <button>Contact</button>
+              <button onClick={handleOpenPopup}>Contact</button>
             </div>
           </div>
           
@@ -144,13 +155,16 @@ const Header = () => {
                   {renderDropdownMenu(false)}
                 </div>
                 <div className="header-btn-box mobile-contact-btn">
-                  <button>Contact</button>
+                  <button onClick={handleOpenPopup}>Contact</button>
                 </div>
               </div>
             </div>
           )}
         </div>
       </header>
+
+      {showFormPopup && <FormPopup onClose={handleClosePopup} />}
+
     </>
   );
 };
